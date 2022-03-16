@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+/*navigationbar*/
+.navbar{
+    padding: 30px 0;
+    position: fixed;
+    width: 100%;
+    font-family: prompt;
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+.navbar.sticky{
+    background: #ff6600; 
+    padding: 15px 0;
+}
+.navbar.sticky .logo a span{
+    color: white;
+}
+.navbar .logo a{
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+}
+.navbar .logo a span{
+    color: #ff6600;
+    transition: all 0.3s ease;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    color: white;
+    font-size: 18px;
+    font-weight: normal;
+    margin-left: 30px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+    color: #ff6600;
+}
+.navbar.sticky .menu li a:hover{
+    color: #380058;
+}
+/*hamburgurbar*/
+.menu-btn{
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+/*home section*/
+.home{
+    display: flex;
+    background: url("img/covermag1.jpg") no-repeat center;
+    height: 100vh;
+    background-size: cover;
+    color: white;
+    min-height: 500px;
+    font-family: prompt;
+}
+.home .max-width{
+    margin: auto 0 auto 10px;
+}
+.home .home-content .text-1{
+    font-size: 50px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .home-content .text-1 span{
+    color: #ff6600;
+    font-weight: 600;
+}
+
+/*Profile section*/
+section{
+    padding: 50px 0;
+}
+
+/* all covered style*/
+.about, .products, .web ,footer{
+    font-family: prompt;
+}
+.about .about-content,
+.web .web-content{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+section .title{
+    position: relative;
+    font-family: prompt;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+}
+section .title::before{
+    content: "";
+    bottom: 0px;
+    left: 50%;
+    position: absolute;
+    width: 180px;
+    height: 3px;
+    background: black;
+    transform: translateX(-50%);
+}
+section .title::after{
+    font-size: 20px;
+    color:  #ff6600;
+    bottom: -15px;
+    left: 50%;
+    position: absolute;
+    padding: 5px;
+    background: white;
+    transform: translateX(-50%);
+}
+/* all purple background*/
+.products,.mag2,.mag4{
+    color: white;
+    background: #67009e;
+}
+.products .title::before,
+.mag2 .title::before,
+.mag4 .title::before{
+    background: white;
+}
+.products .title::after,
+.mag2 .title::after,
+.mag4 .title::after{
+    background: #67009e;
+}
+
+/*production title*/
+.mag1 .title::after{
+    content: "KJ Magazine";
+}
+.mag2 .title::after{
+    content: "Opposite Color";
+}
+.mag3 .title::after{
+    content: "Margin,Column";
+}
+.mag4 .title::after{
+    content: "Text Wrap";
+}
+.mag5 .title::after{
+    content: "Layers & Shapes";
+}
+
+/*img slider1*/
+.body1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-slider{
+    position: relative;
+    width: 800px;
+    height: 500px;
+    margin: 10px;
+}
+.img-slider .slide{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    clip-path: circle(0% at 0 50%);
+}
+
+.img-slider .slide.active{
+    clip-path: circle(150.0% at 0 50%);
+    transition: .5s;
+    transition-property: clip-path;
+}
+
+.img-slider .slide img{
+    z-index: 1;
+    width: 100%;
+    border-radius: 5px;
+}
+.img-slider .button{
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.img-slider .button .btn{
+    background: none;
+    border: solid 3px #ff6600;
+    width: 15px;
+    height: 15px;
+    margin: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.img-slider .button .btn.active{
+    background: #ff6600;
+}
+
+.img-slider .button .btn:hover{
+    background: #ff6600;
+}
+/*another magazine*/
+.blockmag{
+    width: 100%;
+    height: 500px;
+    padding-top: 20px;
+    border-width: 4px;
+    justify-content: center;
+    display: flex;
+}
+.blockpic{
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+    margin: auto;
+    padding-left: 20px;
+}
+
+.mg1{
+    border: solid black .5px;
+    display: flex;
+    justify-content: center;
+    height: 500px;
+}
+.mg2{
+    height: 150px;
+    transition: all 0.3s ease;
+    filter: grayscale(100%);
+    margin-right: 20px;
+}
+.mg2:hover{
+    cursor: pointer;
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+/*footer section*/
+footer{
+    background: #380058;
+    padding: 20px 23px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+/*responsive*/
+@media (max-width: 1300px){
+    .home .max-width{
+        margin-left: 0px;
+    }
+}
+@media (max-width: 1104px){
+    .about .about-content .left img{
+        height: 350px;
+        width: 350px;
+    }
+    .web .web-content .right img{
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+    }
+}
+@media (max-width: 1115px){
+    .max-width{
+        padding: 0 50px;
+    }
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active::before{
+        content: "X";
+        color: white;
+        font-weight: 600;
+        font-family: prompt;
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        background: #67009e;
+        width: 70%;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+        right: 0;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 20px;
+    }
+    .navbar.sticky .menu li a:hover{
+        color: #ff6600;
+    }
+    .home .home-content .text-1{
+        font-size: 40px;
+    }
+    .max-width{
+        max-width: 800px;
+    }
+    .about .about-content .column{
+        width: 100%;
+    }
+    .about .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .about .about-content .right{
+        flex: 100%;
+    }
+    .web .web-content .column{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .img-slider{
+        width: 600px;
+        height: 375px;
+    }
+    .img-slider .button{
+        bottom: -20px;
+    }
+    .img-slider .button .btn{
+        border: solid 2px #ff6600;
+        width: 12px;
+        height: 12px;
+        margin: 10px;
+    }
+    .mg1{
+        height: 350px;
+    }
+    .mg2{
+        height: 100px;
+    }
+    .blockmag{
+        height: 350px;
+    }
+}
+@media (max-width: 672px){
+    .home .home-content .text-1{
+        font-size: 33px;
+    }
+    /*for switch case*/
+    .mg1{
+        height: 275px;
+    }
+    .mg2{
+        height: 80px;
+    }
+    .blockmag{
+        height: 250px;
+    }
+}
+/*for img slide*/
+@media (max-width: 740px){
+    .img-slider{
+        width: 400px;
+        height: 250px;
+    }
+    .img-slider .button{
+        bottom: 5px;
+    }
+    .img-slider .button .btn{
+        border: solid 2px #ff6600;
+        width: 10px;
+        height: 10px;
+        margin: 8px;
+    }
+    footer{
+        font-size: 13px;
+    }
+    
+}
+@media (max-width: 487px){
+    /*all page*/
+    .navbar .logo a{
+        font-size: 23px;
+    }
+    .home .home-content .text-1{
+        font-size: 30px;
+    }
+    footer{
+        font-size: 7px;
+    }
+    section .title{
+        font-size: 25px;
+    }
+    section .title::before{
+        width: 120px;
+        height: 2px;
+    }
+    section .title::after{
+        font-size: 14px;
+    }
+    .blockmag{
+        height: 170px;
+    }
+    .mg1{
+        height: 200px;
+    }
+    .mg2{
+        height: 70px;
+    }
+    

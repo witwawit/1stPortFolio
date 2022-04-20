@@ -396,6 +396,10 @@ footer{
     justify-content: center;
 }
 
+.linkmail{
+    text-decoration: none;
+    color: white;
+}
 
 /*responsive*/
 @media (max-width: 1300px){

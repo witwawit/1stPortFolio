@@ -1,8 +1,8 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="csscode.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -10,7 +10,17 @@
     <title>: : Coding & Programming : :</title>
 </head>
 
+<script>
+    $(window).on("load",function(){
+     $(".loader-wrapper").fadeOut("slow");
+});
+</script>
+
 <body>
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    
     <div class="first">
         <nav class="navbar">
             <div class="max-width">
@@ -27,7 +37,7 @@
                 </div>
             </div>
         </nav>
-    
+
         <section class="home" id="home">
             <div class="max-width">
                 <div class="home-content">
@@ -35,31 +45,84 @@
                 </div>
             </div>
         </section>
-    
+
+        <section class="video0" id="video0">
+            <div class="max-width">
+                <h1 class="title">Coach Community Website</h2>
+                    <h2>Example Interface</h2>
+                    <div class="containerp">
+                        <a class="interncontainer" href="img/intern.png"><img src="img/intern.png"></a>
+                        <a class="interncontainer" href="img/intern4.png"><img src="img/intern4.png"></a>
+                    </div>
+                    <div class="containerp">
+                        <a class="interncontainer" href="img/intern2.png"><img src="img/intern2.png"></a>
+                        <a class="interncontainer" href="img/intern3.png" style="margin-bottom: 0;"><img src="img/intern3.png"></a>
+                    </div>
+                    <h2>My Duty</h2>
+                    <p>- Front-End Developer</p>
+                    <h2>Create By</h2>
+                    <div class="container-logo">
+                        <div class="imgcontain">
+                            <img src="img/html.png">
+                        </div>
+                        <div class="imgcontain">
+                            <img src="img/css.png">
+                        </div>
+
+                        <div class="imgcontain">
+                            <img src="img/js.png">
+                        </div>
+                    </div>
+                    <div class="container-logo">
+                        <div class="imgcontain">
+                            <img src="img/vue copy.png">
+                        </div>
+                        <div class="imgcontain">
+                            <img src="img/bootstrap copy.png">
+                        </div>
+                        <div class="imgcontain">
+                            <img src="img/github copy.png">
+                        </div>
+                    </div>
+                    <h2>Certificate</h2>
+                    <div class="containerp">
+                        <a style="border: 1px solid black;" href="img/internC.png"><img src="img/internC.png"></a>
+                    </div>
+            </div>
+        </section>
+
         <section class="video1" id="video1">
             <div class="max-width">
                 <h1 class="title">KJ Dreamboys Website</h2>
-                <div class="container">
-                    <iframe width="1000" height="566" src="https://www.youtube.com/embed/ZOwhbGAkbP0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <div class="container">
-                    <p>KJ Dreamboys เป็นเว็บไซต์ที่รวบรวมผลงานของสมาชิกแต่ละคนในกลุ่ม จัดทำผ่านภาษา HTML CSS และ Javascript ซึ่งเป็นงานโปรเจคของรายวิชา Web Development I (CMM240) โดยสมาชิกแต่ละคนจะนำผลงานด้านต่างๆของตนเอง มารวบรวมไว้ในเว็บไซต์ ไม่ว่าจะเป็นผลงานด้านการ Design, Drawing, Video รวมถึงผลงานด้านโปรแกรมต่างๆ ทั้งผลงานที่ทำผ่านโปรแกรม Adobe Photoshop, Adobe Indesign, Adobe Illustrator, Adobe After Effects  และโปรแกรมอื่นๆอีกมากมาย โดยแต่ละผลงานล้วนมาจากฝีมือและประสบการณ์ของสมาชิกแต่ละคนทั้งหมด</p>
-                </div>
-                <h2>Example Interface</h2>
-                <div class="container-pic">
-                    <a href="img/c3.jpg"><img src="img/c3.jpg"></a>
-                    <a href="img/c4.jpg"><img src="img/c4.jpg"></a>
-                </div><br><br>
-                <div class="container-pic">
-                    <a href="img/c1.jpg"><img src="img/c1.jpg"></a>
-                    <a href="img/c2.jpg"><img src="img/c2.jpg"></a>
-                </div>
-                <h2>My Responsibility</h2>
-                <p>- Edit All Portfolio Page</p>
-                <p>- Camera Man</p>
+                    <div class="container">
+                        <iframe width="1000" height="566" src="https://www.youtube.com/embed/ZOwhbGAkbP0"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="container">
+                        <p>KJ Dreamboys เป็นเว็บไซต์ที่รวบรวมผลงานของสมาชิกแต่ละคนในกลุ่ม จัดทำผ่านภาษา HTML CSS และ
+                            Javascript ซึ่งเป็นงานโปรเจคของรายวิชา Web Development I (CMM240)
+                            โดยสมาชิกแต่ละคนจะนำผลงานด้านต่างๆของตนเอง มารวบรวมไว้ในเว็บไซต์ ไม่ว่าจะเป็นผลงานด้านการ
+                            Design, Drawing, Video รวมถึงผลงานด้านโปรแกรมต่างๆ ทั้งผลงานที่ทำผ่านโปรแกรม Adobe
+                            Photoshop, Adobe Indesign, Adobe Illustrator, Adobe After Effects และโปรแกรมอื่นๆอีกมากมาย
+                            โดยแต่ละผลงานล้วนมาจากฝีมือและประสบการณ์ของสมาชิกแต่ละคนทั้งหมด</p>
+                    </div>
+                    <h2>Example Interface</h2>
+                    <div class="container-pic">
+                        <a href="img/c3.jpg"><img src="img/c3.jpg"></a>
+                        <a href="img/c4.jpg"><img src="img/c4.jpg"></a>
+                    </div><br><br>
+                    <div class="container-pic">
+                        <a href="img/c1.jpg"><img src="img/c1.jpg"></a>
+                        <a href="img/c2.jpg"><img src="img/c2.jpg"></a>
+                    </div>
+                    <h2>My Responsibility</h2>
+                    <p>- Edit All Portfolio Page</p>
+                    <p>- Camera Man</p>
             </div>
         </section>
-    
+
         <section class="video2" id="video2">
             <div class="max-width">
                 <h2 class="title">Matrix Calculator</h2>
@@ -69,7 +132,7 @@
                 </div>
             </div>
         </section>
-    
+
         <section class="video3" id="video3">
             <div class="max-width">
                 <h2 class="title">GCD LCM Calculator</h2>
@@ -79,7 +142,7 @@
                 </div>
             </div>
         </section>
-    
+
         <section class="video4" id="video4">
             <div class="max-width">
                 <h2 class="title">Mobile Application</h2>
@@ -89,7 +152,7 @@
                 </div>
             </div>
         </section>
-    
+
         <footer>
             Created by Wachirawit Khantipanthukul | <i class='bx bx-copyright'></i> 2021 all rights reserved
         </footer>

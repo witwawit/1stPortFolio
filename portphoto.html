@@ -12,7 +12,16 @@
     <title>: : My Gallery : :</title>
 </head>
 
+<script>
+    $(window).on("load",function(){
+     $(".loader-wrapper").fadeOut("slow");
+});
+</script>
+
 <body>
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
     
     <div class="first">
         <nav class="navbar">

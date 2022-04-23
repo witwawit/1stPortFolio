@@ -1,21 +1,85 @@
-@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600&display=swap");
+* {
     margin: 0;
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
 }
-html{
+html {
     scroll-behavior: smooth;
 }
-.max-width{
+.max-width {
     max-width: 1300px;
     padding: 0 80px;
     margin: auto;
 }
+/*loading*/
+.loader-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #380058;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+}
+.loader {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border: 4px solid #ff6600;
+    animation: loader 2s infinite ease;
+}
+.loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color: #ff6600;
+    animation: loader-inner 2s infinite ease-in;
+}
+
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(180deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loader-inner {
+    0% {
+        height: 0%;
+    }
+    25% {
+        height: 0%;
+    }
+    50% {
+        height: 100%;
+    }
+    75% {
+        height: 100%;
+    }
+    100% {
+        height: 0%;
+    }
+}
 
 /*navigationbar*/
-.navbar{
+.navbar {
     padding: 30px 0;
     position: fixed;
     width: 100%;
@@ -23,47 +87,47 @@ html{
     transition: all 0.3s ease;
     z-index: 999;
 }
-.navbar.sticky{
-    background: #ff6600; 
+.navbar.sticky {
+    background: #ff6600;
     padding: 15px 0;
 }
-.navbar.sticky .logo a span{
+.navbar.sticky .logo a span {
     color: white;
 }
-.navbar .logo a{
+.navbar .logo a {
     color: white;
     font-size: 35px;
     font-weight: 600;
 }
-.navbar .logo a span{
+.navbar .logo a span {
     color: #ff6600;
     transition: all 0.3s ease;
 }
-.navbar .max-width{
+.navbar .max-width {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.navbar .menu li{
+.navbar .menu li {
     list-style: none;
     display: inline-block;
 }
-.navbar .menu li a{
+.navbar .menu li a {
     color: white;
     font-size: 18px;
     font-weight: normal;
     margin-left: 30px;
     transition: color 0.3s ease;
 }
-.navbar .menu li a:hover{
+.navbar .menu li a:hover {
     color: #ff6600;
 }
-.navbar.sticky .menu li a:hover{
+.navbar.sticky .menu li a:hover {
     color: #380058;
 }
 
 /*navigationbar*/
-.navbar{
+.navbar {
     padding: 30px 0;
     position: fixed;
     width: 100%;
@@ -71,46 +135,46 @@ html{
     transition: all 0.3s ease;
     z-index: 999;
 }
-.navbar.sticky{
-    background: #ff6600; 
+.navbar.sticky {
+    background: #ff6600;
     padding: 15px 0;
 }
-.navbar.sticky .logo a span{
+.navbar.sticky .logo a span {
     color: white;
 }
-.navbar .logo a{
+.navbar .logo a {
     color: white;
     font-size: 35px;
     font-weight: 600;
 }
-.navbar .logo a span{
+.navbar .logo a span {
     color: #ff6600;
     transition: all 0.3s ease;
 }
-.navbar .max-width{
+.navbar .max-width {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.navbar .menu li{
+.navbar .menu li {
     list-style: none;
     display: inline-block;
 }
-.navbar .menu li a{
+.navbar .menu li a {
     color: white;
     font-size: 18px;
     font-weight: normal;
     margin-left: 30px;
     transition: color 0.3s ease;
 }
-.navbar .menu li a:hover{
+.navbar .menu li a:hover {
     color: #ff6600;
 }
-.navbar.sticky .menu li a:hover{
+.navbar.sticky .menu li a:hover {
     color: #380058;
 }
 /*hamburgurbar*/
-.menu-btn{
+.menu-btn {
     color: white;
     font-size: 30px;
     cursor: pointer;
@@ -118,7 +182,7 @@ html{
 }
 
 /*home section*/
-.home{
+.home {
     display: flex;
     background: url("img/p1.jpg") no-repeat center;
     /* background: #67009e; */
@@ -128,43 +192,47 @@ html{
     min-height: 500px;
     font-family: prompt;
 }
-.home .max-width{
+.home .max-width {
     margin: auto 0 auto 10px;
 }
-.home .home-content .text-1{
+.home .home-content .text-1 {
     font-size: 27px;
 }
-.home .home-content .text-2{
+.home .home-content .text-2 {
     font-size: 50px;
     font-weight: 600;
     margin-left: -3px;
 }
-.home .home-content .text-3{
+.home .home-content .text-3 {
     font-size: 35px;
     margin: 5px 0;
 }
-.home .home-content .text-3 span{
+.home .home-content .text-3 span {
     color: #ff6600;
     font-weight: 500;
 }
 
 /*Profile section*/
-section{
+section {
     padding: 50px 0;
 }
 
 /* all covered style*/
-.about, .products, .web, .contact, footer{
+.about,
+.products,
+.web,
+.contact,
+footer {
     font-family: prompt;
 }
 .about .about-content,
-.web .web-content{
+.web .web-content {
     display: flex;
     align-content: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-section .title{
+section .title {
     position: relative;
     font-family: prompt;
     font-size: 40px;
@@ -173,7 +241,7 @@ section .title{
     margin-bottom: 60px;
     padding-bottom: 20px;
 }
-section .title::before{
+section .title::before {
     content: "";
     bottom: 0px;
     left: 50%;
@@ -183,9 +251,9 @@ section .title::before{
     background: black;
     transform: translateX(-50%);
 }
-section .title::after{
+section .title::after {
     font-size: 20px;
-    color:  #ff6600;
+    color: #ff6600;
     bottom: -15px;
     left: 50%;
     position: absolute;
@@ -195,48 +263,48 @@ section .title::after{
 }
 /* all purple background*/
 .products,
-.contact{
+.contact {
     color: white;
     background: #67009e;
 }
 .products .title::before,
-.contact .title::before{
+.contact .title::before {
     background: white;
 }
 .products .title::after,
-.contact .title::after{
+.contact .title::after {
     background: #67009e;
 }
 /*start about section*/
-.about .title::after{
+.about .title::after {
     content: "Who I Am";
 }
-.about .about-content .left{
+.about .about-content .left {
     width: 45%;
 }
-.about .about-content .left img{
+.about .about-content .left img {
     height: 400px;
     width: 400px;
     object-fit: cover;
     border-radius: 10px;
 }
-.about .about-content .right{
+.about .about-content .right {
     width: 55%;
 }
-.about .about-content .right .text{
+.about .about-content .right .text {
     font-size: 25px;
     font-weight: 600;
     font-family: prompt;
     margin-bottom: 10px;
 }
-.about .about-content .right .text span{
+.about .about-content .right .text span {
     color: #ff6600;
 }
-.about .about-content .right p{
+.about .about-content .right p {
     font-family: prompt;
     font-weight: normal;
 }
-.about .about-content .right a{
+.about .about-content .right a {
     display: inline-block;
     background: #ff6600;
     color: white;
@@ -249,146 +317,146 @@ section .title::after{
     border: 2px solid #ff6600;
     transition: all 0.3s ease;
 }
-.about .about-content .right a:hover{
+.about .about-content .right a:hover {
     color: #ff6600;
     background: none;
 }
 
 /*products section style*/
-.products .title::after{
+.products .title::after {
     content: "What I Do";
 }
-.products .carousel .card{
+.products .carousel .card {
     background: #8007c1;
     border-radius: 6px;
     margin: 25px 35px;
     text-align: center;
     transition: all 0.3s ease;
 }
-.products .carousel .card:hover{
+.products .carousel .card:hover {
     background: #ff6600;
 }
-.products .carousel .card a{
+.products .carousel .card a {
     color: white;
 }
-.products .carousel .card .text{
+.products .carousel .card .text {
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
     font-family: prompt;
 }
-.products .carousel .card p{
+.products .carousel .card p {
     font-family: prompt;
 }
-.products .carousel .card .box{
+.products .carousel .card .box {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
 }
-.products .carousel .card:hover .box{
+.products .carousel .card:hover .box {
     transform: scale(1.05);
 }
-.products .carousel .card .box a{
+.products .carousel .card .box a {
     color: white;
 }
-.products .carousel .card i{
+.products .carousel .card i {
     padding: 50px;
     font-size: 90px;
     color: #ff6600;
     transition: all 0.3s ease;
 }
-.products .carousel .card:hover i{
+.products .carousel .card:hover i {
     color: white;
 }
-.owl-dots{
+.owl-dots {
     text-align: center;
     margin-top: 20px;
 }
-.owl-dot{
+.owl-dot {
     height: 13px;
     width: 13px;
     margin: 0 5px;
-    outline: none!important;
+    outline: none !important;
     border-radius: 50%;
-    border: 2px solid #ff6600!important;
+    border: 2px solid #ff6600 !important;
     transition: all 0.3s ease;
 }
-.owl-dot.active{
+.owl-dot.active {
     width: 35px;
     border-radius: 14px;
 }
 .owl-dot.active,
-.owl-dot:hover{
-    background: #ff6600!important;
+.owl-dot:hover {
+    background: #ff6600 !important;
 }
 /*web section style*/
-.web .title::after{
+.web .title::after {
     content: "How I Made";
 }
-.web .web-content .column{
+.web .web-content .column {
     width: calc(50% - 30px);
 }
-.web .web-content .left{
+.web .web-content .left {
     font-family: prompt;
 }
-.web .web-content .text{
+.web .web-content .text {
     font-family: prompt;
     font-size: 20px;
     font-weight: 600;
     color: black;
     margin-bottom: 10px;
 }
-.web .web-content .right{
+.web .web-content .right {
     padding-left: 10px;
     margin: auto;
     display: flex;
     justify-content: center;
 }
-.web .web-content .right img{
+.web .web-content .right img {
     width: 140px;
     height: 140px;
     object-fit: cover;
 }
 
 /*contact section*/
-.contact .title::after{
+.contact .title::after {
     content: "To Hire Me";
 }
-.contact-content{
+.contact-content {
     font-family: prompt;
     display: flex;
     flex-direction: column;
     margin-top: 20px;
 }
-.contact-content2{
+.contact-content2 {
     display: flex;
     justify-content: center;
 }
-.contact_icon2{
+.contact_icon2 {
     font-size: 120px;
     margin: 0 60px 60px 60px;
 }
-.contact1{
+.contact1 {
     font-size: 17px;
     margin-bottom: 20px;
 }
-.contact_icon{
+.contact_icon {
     margin-right: 10px;
     font-size: 17px;
 }
-.contact_link{
+.contact_link {
     color: white;
     text-decoration: none;
     transition: 0.3s ease all;
 }
-.contact_link:hover{
+.contact_link:hover {
     color: #ff6600;
 }
 
 /*footer section*/
-footer{
+footer {
     background: #380058;
     padding: 20px 23px;
     color: white;
@@ -396,43 +464,43 @@ footer{
     justify-content: center;
 }
 
-.linkmail{
+.linkmail {
     text-decoration: none;
     color: white;
 }
 
 /*responsive*/
-@media (max-width: 1300px){
-    .home .max-width{
+@media (max-width: 1300px) {
+    .home .max-width {
         margin-left: 0px;
     }
 }
-@media (max-width: 1104px){
-    .about .about-content .left img{
+@media (max-width: 1104px) {
+    .about .about-content .left img {
         height: 350px;
         width: 350px;
     }
-    .web .web-content .right img{
+    .web .web-content .right img {
         width: 120px;
         height: 120px;
         object-fit: cover;
     }
 }
-@media (max-width: 1115px){
-    .max-width{
+@media (max-width: 1115px) {
+    .max-width {
         padding: 0 50px;
     }
-    .menu-btn{
+    .menu-btn {
         display: block;
         z-index: 999;
     }
-    .menu-btn i.active::before{
+    .menu-btn i.active::before {
         content: "X";
         color: white;
         font-weight: 600;
         font-family: prompt;
     }
-    .navbar .menu{
+    .navbar .menu {
         position: fixed;
         height: 100vh;
         background: #67009e;
@@ -443,120 +511,119 @@ footer{
         padding-top: 80px;
         transition: all 0.3s ease;
     }
-    .navbar .menu.active{
+    .navbar .menu.active {
         right: 0;
     }
-    .navbar .menu li{
+    .navbar .menu li {
         display: block;
     }
-    .navbar .menu li a{
+    .navbar .menu li a {
         display: inline-block;
         margin: 20px 0;
         font-size: 20px;
     }
-    .navbar.sticky .menu li a:hover{
+    .navbar.sticky .menu li a:hover {
         color: #ff6600;
     }
-    .home .home-content .text-2{
+    .home .home-content .text-2 {
         font-size: 40px;
     }
-    .home .home-content .text-3{
+    .home .home-content .text-3 {
         font-size: 25px;
     }
-    .max-width{
+    .max-width {
         max-width: 800px;
     }
-    .about .about-content .column{
+    .about .about-content .column {
         width: 100%;
     }
-    .about .about-content .left{
+    .about .about-content .left {
         display: flex;
         justify-content: center;
         margin: 0 auto 60px;
     }
-    .about .about-content .right{
+    .about .about-content .right {
         flex: 100%;
     }
-    .web .web-content .column{
+    .web .web-content .column {
         width: 100%;
         margin-bottom: 30px;
     }
 }
-@media (max-width: 672px){
-    .home .home-content .text-1{
+@media (max-width: 672px) {
+    .home .home-content .text-1 {
         font-size: 20px;
     }
-    .home .home-content .text-2{
+    .home .home-content .text-2 {
         font-size: 27px;
     }
-    .home .home-content .text-3{
+    .home .home-content .text-3 {
         font-size: 23px;
     }
-    .contact_icon2{
+    .contact_icon2 {
         font-size: 70px;
         margin: 0 30px 30px 30px;
     }
-    footer{
+    footer {
         font-size: 13px;
     }
-    
 }
-@media (max-width: 487px){
+@media (max-width: 487px) {
     /*all page*/
-    .navbar .logo a{
+    .navbar .logo a {
         font-size: 23px;
     }
-    .home .home-content .text-1{
+    .home .home-content .text-1 {
         font-size: 16px;
     }
-    .home .home-content .text-2{
+    .home .home-content .text-2 {
         font-size: 18px;
     }
-    .home .home-content .text-3{
+    .home .home-content .text-3 {
         font-size: 16px;
     }
-    .contact_icon2{
+    .contact_icon2 {
         font-size: 70px;
         margin: 0 30px 30px 30px;
     }
-    footer{
+    footer {
         font-size: 7px;
     }
-    section .title{
+    section .title {
         font-size: 25px;
     }
-    section .title::before{
+    section .title::before {
         width: 120px;
         height: 2px;
     }
-    section .title::after{
+    section .title::after {
         font-size: 14px;
     }
 
     /*index page*/
-    .web .web-content .right img{
+    .web .web-content .right img {
         width: 100px;
         height: 100px;
     }
-    .about .about-content .left img{
+    .about .about-content .left img {
         height: 250px;
         width: 250px;
     }
     .about .about-content .right .text,
-    .web .web-content .text{
+    .web .web-content .text {
         font-size: 20px;
     }
     .about .about-content .right p,
     .web .web-content p,
     .products .carousel .card p,
     .contact1,
-    .contact_icon{
+    .contact_icon {
         font-size: 14px;
     }
-    .products .carousel .card .text{
+    .products .carousel .card .text {
         font-size: 20px;
     }
-    .products .carousel .card i{
+    .products .carousel .card i {
         font-size: 70px;
     }
 }

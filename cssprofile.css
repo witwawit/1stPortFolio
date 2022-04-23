@@ -39,7 +39,7 @@ body{
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     background-color: var(--body-color2);
-    color: var(--text-color)
+    color: var(--text-color);
 }
 
 h1,h2,h3,ul,p{
@@ -90,10 +90,6 @@ img{
 .bd-grid{
     display: grid;
     gap: 1.5rem;
-}
-
-.home{
-
 }
 
 .home__container{
@@ -276,6 +272,10 @@ img{
 .button:hover{
     color: #ff6600;
     background: none;
+}
+.mailto{
+    text-decoration: none;
+    color: var(--text-color);
 }
 @media screen and (min-width: 968px){
     body{

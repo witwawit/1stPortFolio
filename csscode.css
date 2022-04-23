@@ -204,11 +204,6 @@ section .title::after{
     margin: 30px;
 }
 /*insert video gallery*/
-video{
-    width: 1000px;
-    height: 566px;
-    margin-bottom: 50px;
-}
 iframe{
     margin-bottom: 50px;
 }
@@ -241,7 +236,7 @@ footer{
         object-fit: cover;
     }
     iframe{
-        height: 400px;
+        height: 400px !important;
     }
 }
 @media (max-width: 1115px){
@@ -322,7 +317,7 @@ footer{
         font-size: 33px;
     }
     iframe{
-        height: 250px;
+        height: 250px !important;
     }
     footer{
         font-size: 13px;
@@ -368,7 +363,7 @@ footer{
 
     /*code*/
     iframe{
-        height: 200px;
+        height: 200px !important;
     }
 
     .container-pic img{
@@ -389,4 +384,4 @@ footer{
     .video1 .max-width p{
         font-size: 14px;
     }
-    
+}

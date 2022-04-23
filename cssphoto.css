@@ -135,18 +135,18 @@ section .title::after{
     transform: translateX(-50%);
 }
 /* all purple background*/
-.products,.photo2,.photo4{
+.products,.photo,.photo3{
     color: white;
     background: #67009e;
 }
 .products .title::before,
-.photo2 .title::before,
-.photo4 .title::before{
+.photo .title::before,
+.photo3 .title::before{
     background: white;
 }
 .products .title::after,
-.photo2 .title::after,
-.photo4 .title::after{
+.photo .title::after,
+.photo3 .title::after{
     background: #67009e;
 }
 
@@ -162,6 +162,47 @@ section .title::after{
 }
 .photo4 .title::after{
     content: "( ถ่ า ย เ ล่ น )";
+}
+/*Main Project Video and IMG*/
+.video1 .max-width h2{
+    font-family: prompt;
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+.video1 .title::after{
+    content: "Pre Production";
+}
+.container p,.video1 .max-width p{
+    font-family: prompt;
+}
+.video1 .max-width p{
+    display: flex;
+    justify-content: center;
+}
+.containerss{
+    display: flex;
+    justify-content: center;
+}
+.container-pic{
+    display: flex;
+    justify-content: space-around;
+}
+.container-pic img{
+    width: 300px;
+    transition: all 0.3s ease;
+}
+.container-pic img:hover,.containerp img:hover{
+    transform: scale(1.1);
+}
+.video1 .max-width h2{
+    font-family: prompt;
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+iframe{
+    margin-bottom: 50px;
 }
 
 /*Photo gallery style*/
@@ -530,6 +571,10 @@ footer{
         height: 120px;
         object-fit: cover;
     }
+    /*Main Project*/
+    iframe{
+        height: 400px;
+    }
 }
 @media (max-width: 1115px){
     .max-width{
@@ -664,6 +709,11 @@ footer{
     .imgn-6{
         min-height: 20rem;
     }
+    /*Main Projecy*/
+    .container-pic img{
+        width: 300px;
+    }
+
 }
 @media (max-width: 672px){
     .home .home-content .text-1{
@@ -744,6 +794,13 @@ footer{
     footer{
         font-size: 13px;
     }
+    /*Main Project*/
+    iframe{
+        height: 250px;
+    }
+    .container-pic img{
+        width: 170px;
+    }
 }
 
 @media (max-width: 487px){
@@ -767,3 +824,23 @@ footer{
     section .title::after{
         font-size: 14px;
     }
+    /*Main Project*/
+    iframe{
+        height: 200px;
+    }
+    .container-pic img{
+        width: 140px;
+    }
+    .container-pic{
+        justify-content: space-between;
+    }
+    .video1 .max-width h1{
+        font-size: 20px;
+    }
+    .video1 .max-width h2{
+        font-size: 18px;
+    }
+    .video1 .max-width p{
+        font-size: 14px;
+    }
+}

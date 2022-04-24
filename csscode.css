@@ -140,18 +140,21 @@ section .title::after {
 /* all purple background*/
 .products,
 .video2,
-.video4 {
+.video4,
+.video1-1 {
     color: white;
     background: #67009e;
 }
 .products .title::before,
 .video2 .title::before,
-.video4 .title::before {
+.video4 .title::before,
+.video1-1 .title::before {
     background: white;
 }
 .products .title::after,
 .video2 .title::after,
-.video4 .title::after {
+.video4 .title::after,
+.video1-1 .title::after{
     background: #67009e;
 }
 
@@ -161,6 +164,9 @@ section .title::after {
 }
 .video1 .title::after {
     content: "Port Website";
+}
+.video1-1 .title::after{
+    content: "By ASP.Net";
 }
 .video2 .title::after {
     content: "By Python";
@@ -225,7 +231,8 @@ section .title::after {
     transform: scale(1.1);
 }
 .video1 .max-width h2,
-.video0 .max-width h2 {
+.video0 .max-width h2,
+.video1-1 .max-width h2 {
     font-family: prompt;
     display: flex;
     justify-content: center;
@@ -243,6 +250,10 @@ footer {
     color: white;
     display: flex;
     justify-content: center;
+}
+/*Moderno*/
+.shadow{
+    box-shadow: 2px 2px 4px #000000
 }
 
 /*responsive*/

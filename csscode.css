@@ -139,22 +139,22 @@ section .title::after {
 }
 /* all purple background*/
 .products,
-.video2,
-.video4,
-.video1-1 {
+.video3,
+.video1-1,
+.video1-2 {
     color: white;
     background: #67009e;
 }
 .products .title::before,
-.video2 .title::before,
-.video4 .title::before,
-.video1-1 .title::before {
+.video3 .title::before,
+.video1-1 .title::before,
+.video1-2 .title::before {
     background: white;
 }
 .products .title::after,
-.video2 .title::after,
-.video4 .title::after,
-.video1-1 .title::after{
+.video3 .title::after,
+.video1-1 .title::after,
+.video1-2  .title::after{
     background: #67009e;
 }
 
@@ -167,6 +167,9 @@ section .title::after {
 }
 .video1-1 .title::after{
     content: "By ASP.Net";
+}
+.video1-2 .title::after{
+    content: "Vue JS & API";
 }
 .video2 .title::after {
     content: "By Python";
@@ -210,11 +213,12 @@ section .title::after {
 }
 .container p,
 .video0 .max-width p,
-.video1 .max-width p {
+.video1 .max-width p{
     font-family: prompt;
 }
 .video1 .max-width p,
-.video0 .max-width p {
+.video0 .max-width p,
+.video1-2 .max-width p {
     display: flex;
     justify-content: center;
 }
@@ -232,7 +236,8 @@ section .title::after {
 }
 .video1 .max-width h2,
 .video0 .max-width h2,
-.video1-1 .max-width h2 {
+.video1-1 .max-width h2,
+.video1-2 .max-width h2{
     font-family: prompt;
     display: flex;
     justify-content: center;

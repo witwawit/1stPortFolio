@@ -1,13 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600&display=swap");
+
 * {
     margin: 0;
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
 }
+
 html {
     scroll-behavior: smooth;
 }
+
 .max-width {
     max-width: 1300px;
     padding: 0 80px;
@@ -23,31 +26,38 @@ html {
     transition: all 0.3s ease;
     z-index: 999;
 }
+
 .navbar.sticky {
     background: #ff6600;
     padding: 15px 0;
 }
+
 .navbar.sticky .logo a span {
     color: white;
 }
+
 .navbar .logo a {
     color: white;
     font-size: 35px;
     font-weight: 600;
 }
+
 .navbar .logo a span {
     color: #ff6600;
     transition: all 0.3s ease;
 }
+
 .navbar .max-width {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .navbar .menu li {
     list-style: none;
     display: inline-block;
 }
+
 .navbar .menu li a {
     color: white;
     font-size: 18px;
@@ -55,9 +65,11 @@ html {
     margin-left: 30px;
     transition: color 0.3s ease;
 }
+
 .navbar .menu li a:hover {
     color: #ff6600;
 }
+
 .navbar.sticky .menu li a:hover {
     color: #380058;
 }
@@ -71,31 +83,38 @@ html {
     transition: all 0.3s ease;
     z-index: 999;
 }
+
 .navbar.sticky {
     background: #ff6600;
     padding: 15px 0;
 }
+
 .navbar.sticky .logo a span {
     color: white;
 }
+
 .navbar .logo a {
     color: white;
     font-size: 35px;
     font-weight: 600;
 }
+
 .navbar .logo a span {
     color: #ff6600;
     transition: all 0.3s ease;
 }
+
 .navbar .max-width {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .navbar .menu li {
     list-style: none;
     display: inline-block;
 }
+
 .navbar .menu li a {
     color: white;
     font-size: 18px;
@@ -103,12 +122,15 @@ html {
     margin-left: 30px;
     transition: color 0.3s ease;
 }
+
 .navbar .menu li a:hover {
     color: #ff6600;
 }
+
 .navbar.sticky .menu li a:hover {
     color: #380058;
 }
+
 /*hamburgurbar*/
 .menu-btn {
     color: white;
@@ -128,22 +150,28 @@ html {
     min-height: 500px;
     font-family: prompt;
 }
+
 .home .max-width {
     margin: auto 0 auto 10px;
 }
+
 .home .home-content .text-1 {
     font-size: 27px;
 }
+
 .home .home-content .text-2 {
     font-size: 50px;
     font-weight: 600;
     margin-left: -3px;
 }
+
 .home .home-content .text-3 {
     font-size: 35px;
     margin: 5px 0;
 }
-.home .home-content .text-3 span {
+
+.home .home-content .text-3 span,
+.home .home-content .text-2 span {
     color: #ff6600;
     font-weight: 500;
 }
@@ -161,6 +189,7 @@ section {
 footer {
     font-family: prompt;
 }
+
 .about .about-content,
 .web .web-content {
     display: flex;
@@ -168,6 +197,7 @@ footer {
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 section .title {
     position: relative;
     font-family: prompt;
@@ -177,6 +207,7 @@ section .title {
     margin-bottom: 60px;
     padding-bottom: 20px;
 }
+
 section .title::before {
     content: "";
     bottom: 0px;
@@ -187,6 +218,7 @@ section .title::before {
     background: black;
     transform: translateX(-50%);
 }
+
 section .title::after {
     font-size: 20px;
     color: #ff6600;
@@ -197,49 +229,60 @@ section .title::after {
     background: white;
     transform: translateX(-50%);
 }
+
 /* all purple background*/
 .products,
 .contact {
     color: white;
     background: #67009e;
 }
+
 .products .title::before,
 .contact .title::before {
     background: white;
 }
+
 .products .title::after,
 .contact .title::after {
     background: #67009e;
 }
+
 /*start about section*/
 .about .title::after {
     content: "Who I Am";
 }
+
 .about .about-content .left {
     width: 45%;
 }
+
 .about .about-content .left img {
     height: 400px;
     width: 400px;
     object-fit: cover;
     border-radius: 10px;
 }
+
 .about .about-content .right {
     width: 55%;
 }
+
 .about .about-content .right .text {
     font-size: 25px;
     font-weight: 600;
     font-family: prompt;
     margin-bottom: 10px;
 }
+
 .about .about-content .right .text span {
     color: #ff6600;
 }
+
 .about .about-content .right p {
     font-family: prompt;
     font-weight: normal;
 }
+
 .about .about-content .right a {
     display: inline-block;
     background: #ff6600;
@@ -253,6 +296,7 @@ section .title::after {
     border: 2px solid #ff6600;
     transition: all 0.3s ease;
 }
+
 .about .about-content .right a:hover {
     color: #ff6600;
     background: none;
@@ -262,6 +306,7 @@ section .title::after {
 .products .title::after {
     content: "What I Do";
 }
+
 .products .carousel .card {
     background: #8007c1;
     border-radius: 6px;
@@ -269,21 +314,26 @@ section .title::after {
     text-align: center;
     transition: all 0.3s ease;
 }
+
 .products .carousel .card:hover {
     background: #ff6600;
 }
+
 .products .carousel .card a {
     color: white;
 }
+
 .products .carousel .card .text {
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
     font-family: prompt;
 }
+
 .products .carousel .card p {
     font-family: prompt;
 }
+
 .products .carousel .card .box {
     display: flex;
     flex-direction: column;
@@ -291,25 +341,31 @@ section .title::after {
     justify-content: center;
     transition: all 0.3s ease;
 }
+
 .products .carousel .card:hover .box {
     transform: scale(1.05);
 }
+
 .products .carousel .card .box a {
     color: white;
 }
+
 .products .carousel .card i {
     padding: 50px;
     font-size: 90px;
     color: #ff6600;
     transition: all 0.3s ease;
 }
+
 .products .carousel .card:hover i {
     color: white;
 }
+
 .owl-dots {
     text-align: center;
     margin-top: 20px;
 }
+
 .owl-dot {
     height: 13px;
     width: 13px;
@@ -319,24 +375,30 @@ section .title::after {
     border: 2px solid #ff6600 !important;
     transition: all 0.3s ease;
 }
+
 .owl-dot.active {
     width: 35px;
     border-radius: 14px;
 }
+
 .owl-dot.active,
 .owl-dot:hover {
     background: #ff6600 !important;
 }
+
 /*web section style*/
 .web .title::after {
     content: "How I Made";
 }
+
 .web .web-content .column {
     width: calc(50% - 30px);
 }
+
 .web .web-content .left {
     font-family: prompt;
 }
+
 .web .web-content .text {
     font-family: prompt;
     font-size: 20px;
@@ -344,12 +406,14 @@ section .title::after {
     color: black;
     margin-bottom: 10px;
 }
+
 .web .web-content .right {
     padding-left: 10px;
     margin: auto;
     display: flex;
     justify-content: center;
 }
+
 .web .web-content .right img {
     width: 140px;
     height: 140px;
@@ -360,33 +424,40 @@ section .title::after {
 .contact .title::after {
     content: "To Hire Me";
 }
+
 .contact-content {
     font-family: prompt;
     display: flex;
     flex-direction: column;
     margin-top: 20px;
 }
+
 .contact-content2 {
     display: flex;
     justify-content: center;
 }
+
 .contact_icon2 {
     font-size: 120px;
     margin: 0 60px 60px 60px;
 }
+
 .contact1 {
     font-size: 17px;
     margin-bottom: 20px;
 }
+
 .contact_icon {
     margin-right: 10px;
     font-size: 17px;
 }
+
 .contact_link {
     color: white;
     text-decoration: none;
     transition: 0.3s ease all;
 }
+
 .contact_link:hover {
     color: #ff6600;
 }
@@ -411,31 +482,37 @@ footer {
         margin-left: 0px;
     }
 }
+
 @media (max-width: 1104px) {
     .about .about-content .left img {
         height: 350px;
         width: 350px;
     }
+
     .web .web-content .right img {
         width: 120px;
         height: 120px;
         object-fit: cover;
     }
 }
+
 @media (max-width: 1115px) {
     .max-width {
         padding: 0 50px;
     }
+
     .menu-btn {
         display: block;
         z-index: 999;
     }
+
     .menu-btn i.active::before {
         content: "X";
         color: white;
         font-weight: 600;
         font-family: prompt;
     }
+
     .navbar .menu {
         position: fixed;
         height: 100vh;
@@ -447,91 +524,117 @@ footer {
         padding-top: 80px;
         transition: all 0.3s ease;
     }
+
     .navbar .menu.active {
         right: 0;
     }
+
     .navbar .menu li {
         display: block;
     }
+
     .navbar .menu li a {
         display: inline-block;
         margin: 20px 0;
         font-size: 20px;
     }
+
     .navbar.sticky .menu li a:hover {
         color: #ff6600;
     }
+
     .home .home-content .text-2 {
         font-size: 40px;
     }
+
     .home .home-content .text-3 {
         font-size: 25px;
     }
+
     .max-width {
         max-width: 800px;
     }
+
     .about .about-content .column {
         width: 100%;
     }
+
     .about .about-content .left {
         display: flex;
         justify-content: center;
         margin: 0 auto 60px;
     }
+
     .about .about-content .right {
         flex: 100%;
     }
+
     .web .web-content .column {
         width: 100%;
         margin-bottom: 30px;
     }
 }
+
 @media (max-width: 672px) {
     .home .home-content .text-1 {
         font-size: 20px;
     }
+
     .home .home-content .text-2 {
         font-size: 27px;
     }
+
     .home .home-content .text-3 {
         font-size: 23px;
     }
+
     .contact_icon2 {
         font-size: 70px;
         margin: 0 30px 30px 30px;
     }
+
     footer {
         font-size: 13px;
     }
 }
+
 @media (max-width: 487px) {
+
     /*all page*/
     .navbar .logo a {
         font-size: 23px;
     }
+
     .home .home-content .text-1 {
         font-size: 16px;
     }
+
     .home .home-content .text-2 {
         font-size: 18px;
     }
+
     .home .home-content .text-3 {
         font-size: 16px;
     }
+
     .contact_icon2 {
         font-size: 70px;
         margin: 0 30px 30px 30px;
     }
+
     footer {
         font-size: 7px;
     }
+
     section .title {
         font-size: 25px;
     }
+
     section .title::before {
         width: 120px;
         height: 2px;
     }
+
     section .title::after {
         font-size: 14px;
     }
@@ -541,14 +644,17 @@ footer {
         width: 100px;
         height: 100px;
     }
+
     .about .about-content .left img {
         height: 250px;
         width: 250px;
     }
+
     .about .about-content .right .text,
     .web .web-content .text {
         font-size: 20px;
     }
+
     .about .about-content .right p,
     .web .web-content p,
     .products .carousel .card p,
@@ -556,9 +662,11 @@ footer {
     .contact_icon {
         font-size: 14px;
     }
+
     .products .carousel .card .text {
         font-size: 20px;
     }
+
     .products .carousel .card i {
         font-size: 70px;
     }

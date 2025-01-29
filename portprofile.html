@@ -1,196 +1,235 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-
-<head>
+  <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="cssprofile.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="cssprofile.css" />
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
     <title>: : My Profile : :</title>
-</head>
+  </head>
 
-<body>
+  <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const birthDate = moment("15/10/2000", "DD/MM/YYYY");
+            const today = moment();
+            const age = today.diff(birthDate, 'years');
+            document.getElementById("ages").textContent = `${age}`;
+        });
+    </script>
     <div class="first">
-        <main class="l-main bd-container">
-            <div class="resume">
-                <div class="resume__left">
-                    <section class="home" id="home">
-                        <div class="home__container section bd-grid">
-                            <div class="home__data bd-grid">
-                                <img src="img/1.jpg" alt="" class="home__img">
+      <main class="l-main bd-container">
+        <div class="resume">
+          <div class="resume__left">
+            <section class="home" id="home">
+              <div class="home__container section bd-grid">
+                <div class="home__data bd-grid">
+                  <img src="img/1.jpg" alt="" class="home__img" />
 
-                                <h1 class="home__title"><b>WACHIRAWIT</b> KHANTIPANTHUKUL</h1>
-                                <!-- <h3 class="home__profession">FRONT-END DEVELOPER</h3> -->
-
-                            </div>
-
-                            <div class="home__address bd-grid">
-                                <span class="home__information">
-                                <i class="bx bx-map home__icon"></i>C&C Apartment 39/4 หมู่ 6 ซอยงามวงศ์วาน 47 แยก 21 ทุ่งสองห้อง เขตหลักสี่ฆฆ กรุงเทพฯ 10210
-                                </span>
-                                <span class="home__information">
-                                    <i class="bx bx-envelope home__icon"></i><a class="mailto"
-                                        href="mailto:witwawit5@gmail.com"> witwawit5@gmail.com</a>
-                                </span>
-                                <span class="home__information">
-                                    <i class="bx bx-phone home__icon"></i> 086-945-6983
-                                </span>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="social section">
-                        <h2 class="section-title">Social</h2>
-
-                        <div class="social__container bd-grid">
-                            <a href="https://www.facebook.com/profile.php?id=100003967368473" target="_blank"
-                                class="social__link">
-                                <i class="bx bxl-facebook social__icon"></i> @Wit Wachirawit
-                            </a>
-                            <a href="https://www.instagram.com/wchr_witt/" target="_blank" class="social__link">
-                                <i class="bx bxl-instagram social__icon"></i> @wchr_witt
-                            </a>
-                        </div>
-                    </section>
-
-                    <section class="profile section" id="profile">
-                        <h2 class="section-title">Profile</h2>
-
-                        <p class="profile__description">
-                            สวัสดีครับ ผมชื่อ วชิรวิทย์ ขันติพันธุกุล ชื่อเล่น วิทย์ อายุ 23 ปี สำเร็จการศึกษาจาก
-                            คณะครุศาสตร์อุตสาหกรรมและเทคโนโลยี สาขาวิทยาการคอมพิวเตอร์ประยุกต์-มัลติมีเดีย
-                            มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี ผมมีความสนใจในสายงานด้านการออกแบบและการพัฒนาเว็บไซต์
-                            จึงได้จัดทำแฟ้มรวบรวมผลงานนี้ขึ้นเพื่อใช้ประกอบการยื่นสมัครงาน</p>
-                    </section>
-
-                    <section class="skills section" id="skills">
-                        <h2 class="section-title">skills</h2>
-
-                        <div class="skills__content bd-grid">
-                            <ul class="skills__data">
-                                <li class="skills__name">
-                                    <span class="skills__circle"></span>HTML CSS Javascript
-                                </li>
-                                <li class="skills__name">
-                                    <span class="skills__circle"></span>JS Framework (Vue , React , Next)
-                                </li>
-                                <li class="skills__name">
-                                    <span class="skills__circle"></span>Figma
-                                </li>
-                                <li class="skills__name">
-                                    <span class="skills__circle"></span>NodeJS (Basic MVC)
-                                </li>
-                                <li class="skills__name">
-                                    <span class="skills__circle"></span>Git
-                                </li>
-                            </ul>
-
-                            <ul class="skills__data">
-                                <li class="skills__name">
-                                    <span class="skills__circle"></span>Postman , MongoDB (Basic)
-                                </li>
-                                <li class="skills__name">
-                                    <span class="skills__circle"></span>Photoshop
-                                </li>
-                                <li class="skills__name">
-                                    <span class="skills__circle"></span>Illustrator
-                                </li>
-                                <li class="skills__name">
-                                    <span class="skills__circle"></span>After Effects
-                                </li>
-                                <li class="skills__name">
-                                    <span class="skills__circle"></span>Premiere Pro
-                                </li>
-                            </ul>
-                        </div>
-                    </section>
-
-                    <section class="interest section">
-                        <h2 class="section-title">interests</h2>
-
-                        <div class="interest__container bd-grid">
-                            <div class="interest__content">
-                                <i class="bx bx-code-alt interest__icon"></i>
-                                <span class="interest__name">Coding</span>
-                            </div>
-                            <div class="interest__content">
-                                <i class="bx bx-palette interest__icon"></i>
-                                <span class="interest__name">Drawing</span>
-                            </div>
-                            <div class="interest__content">
-                                <i class="bx bx-joystick interest__icon"></i>
-                                <span class="interest__name">Game</span>
-                            </div>
-                            <div class="interest__content">
-                                <i class="bx bx-football interest__icon"></i>
-                                <span class="interest__name">Sport</span>
-                            </div>
-                            <div class="interest__content">
-                                <i class="bx bx-headphone interest__icon"></i>
-                                <span class="interest__name">Music</span>
-                            </div>
-                            <div class="interest__content">
-                                <i class="bx bx-camera interest__icon"></i>
-                                <span class="interest__name">Photography</span>
-                            </div>
-                        </div>
-                    </section>
+                  <h1 class="home__title"><b>WACHIRAWIT</b> KHANTIPANTHUKUL</h1>
+                  <!-- <h3 class="home__profession">FRONT-END DEVELOPER</h3> -->
                 </div>
 
-                <div class="resume__right">
-                    <section class="education section" id="education">
-                        <h2 class="section-title">education</h2>
+                <div class="home__address bd-grid">
+                  <span class="home__information">
+                    <i class="bx bx-map home__icon"></i>C&C Apartment 39/4 หมู่
+                    6 ซอยงามวงศ์วาน 47 แยก 21 ทุ่งสองห้อง เขตหลักสี่ฆฆ กรุงเทพฯ
+                    10210
+                  </span>
+                  <span class="home__information">
+                    <i class="bx bx-envelope home__icon"></i
+                    ><a class="mailto" href="mailto:witwawit5@gmail.com">
+                      witwawit5@gmail.com</a
+                    >
+                  </span>
+                  <span class="home__information">
+                    <i class="bx bx-phone home__icon"></i> 086-945-6983
+                  </span>
+                </div>
+              </div>
+            </section>
 
-                        <div class="education__container bd-grid">
+            <section class="social section">
+              <h2 class="section-title">Social</h2>
 
-                            <div class="education__content">
-                                <div class="education__time">
-                                    <span class="education__rounder"></span>
-                                    <span class="education__line"></span>
+              <div class="social__container bd-grid">
+                <a
+                  href="https://www.facebook.com/profile.php?id=100003967368473"
+                  target="_blank"
+                  class="social__link"
+                >
+                  <i class="bx bxl-facebook social__icon"></i> @Wit Wachirawit
+                </a>
+                <a
+                  href="https://www.instagram.com/wchr_witt/"
+                  target="_blank"
+                  class="social__link"
+                >
+                  <i class="bx bxl-instagram social__icon"></i> @wchr_witt
+                </a>
+              </div>
+            </section>
 
-                                </div>
+            <section class="profile section" id="profile">
+              <h2 class="section-title">Profile</h2>
 
-                                <div class="education__data bd-grid">
-                                    <h3 class="education__title">University (Department of Computer-Multimedia)</h3>
-                                    <span class="education__studies">Facaulty of Industrial Education And Technology
-                                        <p>King Mongkut's University of Technology Thonburi</p>
-                                    </span>
-                                    <span class="education__years">2019 - 2022</span>
-                                </div>
-                            </div>
+              <p class="profile__description">
+                สวัสดีครับ ผมชื่อ วชิรวิทย์ ขันติพันธุกุล ชื่อเล่น วิทย์ อายุ <span id="ages"></span>
+                ปี สำเร็จการศึกษาจาก คณะครุศาสตร์อุตสาหกรรมและเทคโนโลยี
+                สาขาวิทยาการคอมพิวเตอร์ประยุกต์-มัลติมีเดีย
+                มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี
+                ผมมีความสนใจในสายงานด้านการออกแบบและการพัฒนาเว็บไซต์
+                จึงได้จัดทำแฟ้มรวบรวมผลงานนี้ขึ้นเพื่อใช้ประกอบการยื่นสมัครงาน
+              </p>
+            </section>
 
-                            <div class="education__content">
-                                <div class="education__time">
-                                    <span class="education__rounder"></span>
-                                    <span class="education__line"></span>
-                                </div>
+            <section class="skills section" id="skills">
+              <h2 class="section-title">skills</h2>
 
-                                <div class="education__data bd-grid">
-                                    <h3 class="education__title">High School (Science Math Technology Enviroment)</h3>
-                                    <span class="education__studies">Deebuk Phang-nga Wittayayon School</span>
-                                    <span class="education__years">2013 - 2018</span>
-                                </div>
-                            </div>
+              <div class="skills__content bd-grid">
+                <ul class="skills__data">
+                  <li class="skills__name">
+                    <span class="skills__circle"></span>HTML CSS Javascript
+                  </li>
+                  <li class="skills__name">
+                    <span class="skills__circle"></span>VueJS
+                  </li>
+                  <li class="skills__name">
+                    <span class="skills__circle"></span>ReactJS
+                  </li>
+                  <li class="skills__name">
+                    <span class="skills__circle"></span>NextJS
+                  </li>
+                  <li class="skills__name">
+                    <span class="skills__circle"></span>NuxtJS
+                  </li>
 
-                            <div class="education__content">
-                                <div class="education__time">
-                                    <span class="education__rounder"></span>
+                  <li class="skills__name">
+                    <span class="skills__circle"></span>NodeJS
+                  </li>
+                </ul>
 
-                                </div>
+                <ul class="skills__data">
+                  <li class="skills__name">
+                    <span class="skills__circle"></span>Postman , MongoDB
+                    (Basic)
+                  </li>
+                  <li class="skills__name">
+                    <span class="skills__circle"></span>Adobe
+                  </li>
+                  <li class="skills__name">
+                    <span class="skills__circle"></span>Figma
+                  </li>
+                  <li class="skills__name">
+                    <span class="skills__circle"></span>Git
+                  </li>
+                  <li class="skills__name">
+                    <span class="skills__circle"></span>Jira
+                  </li>
+                  <li class="skills__name">
+                    <span class="skills__circle"></span>Bitbucket
+                  </li>
+                </ul>
+              </div>
+            </section>
 
-                                <div class="education__data bd-grid">
-                                    <h3 class="education__title">Primary School (Science Math Program)</h3>
-                                    <span class="education__studies">Anuban Phang-nga School</span>
-                                    <span class="education__years">2006 - 2012</span>
-                                </div>
-                            </div>
+            <section class="interest section">
+              <h2 class="section-title">interests</h2>
 
-                        </div>
-                    </section>
+              <div class="interest__container bd-grid">
+                <div class="interest__content">
+                  <i class="bx bx-code-alt interest__icon"></i>
+                  <span class="interest__name">Coding</span>
+                </div>
+                <div class="interest__content">
+                  <i class="bx bx-palette interest__icon"></i>
+                  <span class="interest__name">Drawing</span>
+                </div>
+                <div class="interest__content">
+                  <i class="bx bx-joystick interest__icon"></i>
+                  <span class="interest__name">Game</span>
+                </div>
+                <div class="interest__content">
+                  <i class="bx bx-football interest__icon"></i>
+                  <span class="interest__name">Sport</span>
+                </div>
+                <div class="interest__content">
+                  <i class="bx bx-headphone interest__icon"></i>
+                  <span class="interest__name">Music</span>
+                </div>
+                <div class="interest__content">
+                  <i class="bx bx-camera interest__icon"></i>
+                  <span class="interest__name">Photography</span>
+                </div>
+              </div>
+            </section>
+          </div>
 
-                    <section class="cert section" id="cert">
+          <div class="resume__right">
+            <section class="education section" id="education">
+              <h2 class="section-title">education</h2>
+
+              <div class="education__container bd-grid">
+                <div class="education__content">
+                  <div class="education__time">
+                    <span class="education__rounder"></span>
+                    <span class="education__line"></span>
+                  </div>
+
+                  <div class="education__data bd-grid">
+                    <h3 class="education__title">
+                      University (Department of Computer-Multimedia)
+                    </h3>
+                    <span class="education__studies"
+                      >Facaulty of Industrial Education And Technology
+                      <p>King Mongkut's University of Technology Thonburi</p>
+                    </span>
+                    <span class="education__years">2019 - 2022</span>
+                  </div>
+                </div>
+
+                <div class="education__content">
+                  <div class="education__time">
+                    <span class="education__rounder"></span>
+                    <span class="education__line"></span>
+                  </div>
+
+                  <div class="education__data bd-grid">
+                    <h3 class="education__title">
+                      High School (Science Math Technology Enviroment)
+                    </h3>
+                    <span class="education__studies"
+                      >Deebuk Phang-nga Wittayayon School</span
+                    >
+                    <span class="education__years">2013 - 2018</span>
+                  </div>
+                </div>
+
+                <div class="education__content">
+                  <div class="education__time">
+                    <span class="education__rounder"></span>
+                  </div>
+
+                  <div class="education__data bd-grid">
+                    <h3 class="education__title">
+                      Primary School (Science Math Program)
+                    </h3>
+                    <span class="education__studies"
+                      >Anuban Phang-nga School</span
+                    >
+                    <span class="education__years">2006 - 2012</span>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- <section class="cert section" id="cert">
                         <h2 class="section-title">Certificates</h2>
 
                         <div class="cert__container bd-grid">
@@ -220,13 +259,13 @@
                                     เพื่อใช้สำหรับการสื่อสารกับอีกโค้ชด้วยกันและสร้างกระทู้ความคิดเห็น (2021)</p>
                             </div>
                         </div>
-                    </section>
+                    </section> -->
 
-                    <section class="exp section" id="exp">
-                        <h2 class="section-title">Experience</h2>
+            <section class="exp section" id="exp">
+              <h2 class="section-title">Experience</h2>
 
-                        <div class="exp__container bd-grid">
-                            <!-- <div class="exp__content">
+              <div class="exp__container bd-grid">
+                <!-- <div class="exp__content">
                                 <div class="exp__time">
                                     <span class="exp__rounder"></span>
                                     <span class="exp__line"></span>
@@ -244,7 +283,7 @@
                                 </div>
                             </div> -->
 
-                            <div class="exp__content">
+                <!-- <div class="exp__content">
                                 <div class="exp__time">
                                     <span class="exp__rounder"></span>
                                     <span class="exp__line"></span>
@@ -258,72 +297,113 @@
                                         โดยศึกษาจากโปรแกรมที่ใช้ทั้ง Adobe Illustrator, Adobe Photoshop และ Adobe
                                         Indesign และเทคนิคโทนสีที่ใช้ ทั้ง RGB และ CMYK</p>
                                 </div>
-                            </div>
+                            </div> -->
 
-                            <div class="exp__content">
-                                <div class="exp__time">
-                                    <span class="exp__rounder"></span>
-                                    <span class="exp__line"></span>
-                                </div>
+                <div class="exp__content">
+                  <div class="exp__time">
+                    <span class="exp__rounder"></span>
+                    <span class="exp__line"></span>
+                  </div>
 
-                                <div class="exp__data bd-grid">
-                                    <h3 class="exp__title">Internship Program as Front-end Developer</h3>
-                                    <span class="exp__company">From 2021 | @Globish Academia</span>
-                                    <p class="exp__description">เข้ารับการฝึกงาน ณ บริษัท โกลบิช อคาเดเมีย ในตำแหน่ง
-                                        Front-end Developer เป็นเวลา 2 เดือน โดยสร้างเว็บไซต์ดูหนังโดยใช้ข้อมูล .json ,
-                                        ออกแบบ UX UI ผ่าน Figma , การทำโปรเจคฝึกงานสร้างกระทู้สำหรับโค้ชสอนภาษาอังกฤษ
-                                        ด้วย Vue JS Framework และทำงานร่วมกับ Back-end Developer ผ่าน Github , Sequel
-                                        Ace (Database) , Docker </p>
-                                </div>
-                            </div>
-
-                            <div class="exp__content">
-                                <div class="exp__time">
-                                    <span class="exp__rounder"></span>
-                                    <span class="exp__line"></span>
-                                </div>
-
-                                <div class="exp__data bd-grid">
-                                    <h3 class="exp__title">Internship Program as Front-end Developer</h3>
-                                    <span class="exp__company">From 2022 | @Punch Up & Wevis</span>
-                                    <p class="exp__description">เข้ารับการฝึกงาน ณ บริษัท Punch Up & Wevis ในตำแหน่ง
-                                        Front-end Developer เป็นเวลา 2 เดือน โดยได้ทำการสร้างเว็บไซต์ Data Storytelling
-                                        เพื่อตั้งประเด็นคำถามและหาคำตอบ ปัญหาทางสังคมไทยเกี่ยวกับพรบ.สุราก้าวหน้า
-                                        โดยใช้คราฟเบียร์เป็นตัวเล่าเรื่อง ทำการการออกแบบและพัฒนา
-                                        นำเสนอการวิเคราะห์เชิงลึกและเรื่องราวที่แสดงถึงผลกระทบทางสังคมของคราฟต์เบียร์ที่มีต่อชุมชน
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="exp__content">
-                                <div class="exp__time">
-                                    <span class="exp__rounder"></span>
-                                </div>
-
-                                <div class="exp__data bd-grid">
-                                    <h3 class="exp__title">Working as Web Developer</h3>
-                                    <span class="exp__company">Since July, 2023 | @Bainisys</span>
-                                    <p class="exp__description">
-                                        เริ่มทำงานที่ Bainisys ในตำแหน่ง Web Developer มีประสบการณ์ใช้ Next JS เป็น
-                                        Framework
-                                        หลักในการพัฒนาหน้าบ้าน ส่วนหลังบ้านใช้ Postman , NodeJS เป็นต้น
-                                        ระยะเวลางานตั้งแต่เดือนกรกฏาคม ปี 2023 จนถึงปัจจุบัน
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <div class="button-container">
-                        <a href="index.html" class="button">Back To Home</a>
-                    </div>
-                    <br><br>
+                  <div class="exp__data bd-grid">
+                    <h3 class="exp__title">Frontend Developer</h3>
+                    <span class="exp__company"
+                      >From March, 2024 | @Globish Academia</span
+                    >
+                    <p class="exp__description">
+                      พัฒนาและปรับปรุงฟีเจอร์ภายในสำหรับแพลตฟอร์มสอนภาษาอังกฤษโดยใช้
+                      Vue 3 และ TypeScript
+                      แก้ไขข้อบกพร่องและสร้างเครื่องมือจัดการสำหรับผู้ดูแลระบบเพื่อเพิ่มประสิทธิภาพการดำเนินงาน
+                      ทำงานร่วมกับทีมข้ามสายงานเพื่อมอบประสบการณ์ผู้ใช้ที่ราบรื่น
+                      <br />
+                      ระยะเวลางานตั้งแต่เดือนมีนาคม ปี 2024 ถึงมกราคม ปี 2025
+                      (10เดือน)
+                    </p>
+                  </div>
                 </div>
+
+                <div class="exp__content">
+                  <div class="exp__time">
+                    <span class="exp__rounder"></span>
+                    <span class="exp__line"></span>
+                  </div>
+
+                  <div class="exp__data bd-grid">
+                    <h3 class="exp__title">Software Engineer</h3>
+                    <span class="exp__company"
+                      >From July, 2023 | @Bainisys</span
+                    >
+                    <p class="exp__description">
+                      เริ่มทำงานที่ Bainisys ในตำแหน่ง Software Engineer
+                      มีประสบการณ์ใช้ Next JS, React JS เป็น Framework
+                      หลักในการพัฒนาหน้าบ้าน ส่วนหลังบ้านใช้ Postman , NodeJS
+                      เป็นต้น <br />
+                      ระยะเวลางานตั้งแต่เดือนกรกฏาคม ปี 2023 ถึงมีนาคม ปี 2024
+                      (9เดือน)
+                    </p>
+                  </div>
+                </div>
+
+                <div class="exp__content">
+                  <div class="exp__time">
+                    <span class="exp__rounder"></span>
+                    <span class="exp__line"></span>
+                  </div>
+
+                  <div class="exp__data bd-grid">
+                    <h3 class="exp__title">
+                      Internship Program as Front-end Developer
+                    </h3>
+                    <span class="exp__company"
+                      >From 2022 | @Punch Up & Wevis</span
+                    >
+                    <p class="exp__description">
+                      เข้ารับการฝึกงาน ณ บริษัท Punch Up & Wevis ในตำแหน่ง
+                      Front-end Developer เป็นเวลา 2 เดือน
+                      โดยได้ทำการสร้างเว็บไซต์ Data Storytelling
+                      เพื่อตั้งประเด็นคำถามและหาคำตอบ
+                      ปัญหาทางสังคมไทยเกี่ยวกับพรบ.สุราก้าวหน้า
+                      โดยใช้คราฟเบียร์เป็นตัวเล่าเรื่อง ทำการการออกแบบและพัฒนา
+                      นำเสนอการวิเคราะห์เชิงลึกและเรื่องราวที่แสดงถึงผลกระทบทางสังคมของคราฟต์เบียร์ที่มีต่อชุมชน
+                    </p>
+                  </div>
+                </div>
+
+                <div class="exp__content">
+                  <div class="exp__time">
+                    <span class="exp__rounder"></span>
+                  </div>
+
+                  <div class="exp__data bd-grid">
+                    <h3 class="exp__title">
+                      Internship Program as Front-end Developer
+                    </h3>
+                    <span class="exp__company"
+                      >From 2021 | @Globish Academia</span
+                    >
+                    <p class="exp__description">
+                      เข้ารับการฝึกงาน ณ บริษัท โกลบิช อคาเดเมีย ในตำแหน่ง
+                      Front-end Developer เป็นเวลา 2 เดือน
+                      โดยสร้างเว็บไซต์ดูหนังโดยใช้ข้อมูล .json , ออกแบบ UX UI
+                      ผ่าน Figma ,
+                      การทำโปรเจคฝึกงานสร้างกระทู้สำหรับโค้ชสอนภาษาอังกฤษ ด้วย
+                      Vue JS Framework และทำงานร่วมกับ Back-end Developer ผ่าน
+                      Github , Sequel Ace (Database) , Docker
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <div class="button-container">
+              <a href="index.html" class="button">Back To Home</a>
             </div>
-        </main>
+            <br /><br />
+          </div>
+        </div>
+      </main>
     </div>
 
     <script src="script.js"></script>
-
-</body>
-
+  </body>
 </html>

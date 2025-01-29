@@ -15,6 +15,17 @@
 </head>
 
 <body>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+		<script>
+			document.addEventListener("DOMContentLoaded", () => {
+				const birthDate = moment("15/10/2000", "DD/MM/YYYY");
+      	const today = moment();
+      	const age = today.diff(birthDate, 'years');
+      	document.getElementById("age").textContent = age;
+      	document.getElementById("age2").textContent = age;
+
+    	});
+		</script>
     <div class="first">
         <nav class="navbar">
             <div class="max-width">
@@ -52,11 +63,11 @@
                     <div class="column right">
                         <div class="text">Wachirawit <span>Khantipanthukul</span></div>
                         <p>
-                            สวัสดีครับ ผมชื่อ วชิรวิทย์ ขันติพันธุกุล ชื่อเล่น วิทย์ อายุ 23 ปี สำเร็จการศึกษาจาก
+                            สวัสดีครับ ผมชื่อ วชิรวิทย์ ขันติพันธุกุล ชื่อเล่น วิทย์ อายุ <span id="age"></span> ปี สำเร็จการศึกษาจาก
                             คณะครุศาสตร์อุตสาหกรรมและเทคโนโลยี สาขาวิทยาการคอมพิวเตอร์ประยุกต์-มัลติมีเดีย
                             มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี ผมมีความสนใจในสายงานด้านการออกแบบและการพัฒนาเว็บไซต์
                             จึงได้จัดทำแฟ้มรวบรวมผลงานนี้ขึ้นเพื่อใช้ประกอบการยื่นสมัครงาน</p><br>
-                        <p>Hello, My name is Wachirawit Khantipanthukul but you can call me Wit. I am 23 years old and
+                        <p>Hello, My name is Wachirawit Khantipanthukul but you can call me Wit. I am <span id="age2"></span> years old and
                             have successfully completed my studies at the Faculty of Industrial Education and
                             Technology, specializing in Applied Computer Science - Multimedia, at King Mongkut's
                             University of Technology Thonburi. I have a keen interest in the fields of web design and

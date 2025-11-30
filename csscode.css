@@ -137,11 +137,11 @@ section .title::after {
   background: white;
   transform: translateX(-50%);
 }
-.golink2{
-    color: rgb(0, 0, 0);
+.golink2 {
+  color: rgb(0, 0, 0);
 }
-.golink2{
-    color: white;
+.golink2 {
+  color: white;
 }
 .golink1,
 .golink2 {
@@ -153,7 +153,9 @@ section .title::after {
 }
 /* all purple background*/
 .products,
+.fusionsoft,
 .video3,
+.fusionsoft,
 .video0-1,
 .video1-1,
 .video1-2 {
@@ -163,12 +165,14 @@ section .title::after {
 .products .title::before,
 .video3 .title::before,
 .video1-1 .title::before,
+.fusionsoft .title::before,
 .video0-1 .title::before,
 .video1-2 .title::before {
   background: white;
 }
 .products .title::after,
 .video3 .title::after,
+.fusionsoft .title::after,
 .video0-1 .title::after,
 .video1-1 .title::after,
 .video1-2 .title::after {
@@ -176,6 +180,9 @@ section .title::after {
 }
 
 /*production title*/
+.fusionsoft .title::after {
+  content: "FusionSoft Work";
+}
 .video0 .title::after {
   content: "Intern Project";
 }
@@ -233,12 +240,14 @@ section .title::after {
 }
 .container p,
 .video0 .max-width p,
+.fusionsoft .max-width p,
 .video0-1 .max-width p,
 .video1 .max-width p {
   font-family: prompt;
 }
 .video1 .max-width p,
 .video0 .max-width p,
+.fusionsoft .max-width p,
 .video0-1 .max-width p,
 .video1-2 .max-width p {
   display: flex;
@@ -258,6 +267,7 @@ section .title::after {
 }
 .video1 .max-width h2,
 .video0 .max-width h2,
+.fusionsoft .max-width h2,
 .video0-1 .max-width h2,
 .video1-1 .max-width h2,
 .video1-2 .max-width h2 {
@@ -446,16 +456,19 @@ footer {
     width: 320px;
   }
   .video0 .max-width h1,
+  .fusionsoft .max-width h1,
   .video0-1 .max-width h1,
   .video1 .max-width h1 {
     font-size: 20px;
   }
   .video0 .max-width h2,
+  .fusionsoft .max-width h2,
   .video0-1 .max-width h2,
   .video1 .max-width h2 {
     font-size: 18px;
   }
   .video0 .max-width p,
+  .fusionsoft .max-width p,
   .video0-1 .max-width p,
   .video1 .max-width p {
     font-size: 14px;
